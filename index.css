@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #0018ed;
+  --mainFont: #2d2e3a;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: var(--mainFont);
+}
+
+.header {
+  max-width: 1440px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  display: flex;
+  gap: 0 48px;
+}
+
+.header__button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+  font-family: 'Source Sans Pro', sans-serif;
+  padding: 16px 32px;
+  border-radius: 32px;
+  cursor: pointer;
+}
+
+.header__menu {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.header__menu ul {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
+
+.header__menu ul > li {
+  font-size: 20px;
+  line-height: 120%;
+  font-weight: 400;
+}
+
+.header__menu ul > li > a {
+  text-decoration: none;
+  color: var(--mainFont);
+}
+
+.header__menu ul > li > a:hover {
+  color: var(--primary);
+}
+
+.header__menu > a {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  text-decoration: none;
+  color: var(--mainFont);
+  font-size: 20px;
+}
+
+.header__menu > a:hover {
+  color: var(--primary);
+}
